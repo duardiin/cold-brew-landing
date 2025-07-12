@@ -1,0 +1,177 @@
+*{
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+body{
+    background: #0a0a0a;
+}
+header{
+    position: fixed;
+    width: 100%;
+    top: 0%;
+    right: 0%;
+    z-index: 1000;
+    padding: 35px 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: all .50s ease;
+}
+.logo img{
+    width: 100%;
+    height: auto;
+}
+.navlist{
+    display: flex;
+}
+.navlist a{
+    display: inline-block;
+    margin: 0 35px;
+    color: white;
+    font-size: 16px;
+    transition: all .6s ease;
+}
+.navlist a:hover{
+    color: rgb(88, 41, 9);
+}
+.right-content{
+    display: flex;
+    align-items: center;
+}
+.nav-btn{
+    display: inline-block;
+    padding: 9px 24px;
+    background: transparent;
+    border: 2px solid white;
+    border-radius: 7px;
+    color: white;
+    font-size: 15px;
+    font-weight: 500;
+    transition: all .6s ease;
+}
+.nav-btn:hover{
+    transform: translateY(-5px);
+    border: 2px solid rgb(88, 41, 9);
+    color: rgb(88, 41, 9);
+}
+section{
+    padding: 0 14%;
+}
+.hero{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: url(img/bg.png);
+    background-size: cover;
+    background-position: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 2rem;
+    color: white;
+}
+.hero-img img{
+    width: 100%;
+    height: auto;
+}
+.hero-text h1{
+    font-size: 100px;
+    font-weight: 900;
+    margin: 15px 0;
+}
+.hero-text h5{
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+.hero-text p{
+    width: 100%;
+    max-width: 620px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 32px;
+    color: white;
+    margin-bottom: 40px;
+
+}
+.main-hero{
+    display: flex;
+    align-items: center;
+}
+.btn{
+    display: inline-block;
+    padding: 13px 32px;
+    background: rgb(88, 41, 9);
+    border: 2px solid transparent;
+    border-radius: 7px;
+    color: white;
+    font-size: 15px;
+    font-weight: 500;
+    transition: all .6s ease;
+    margin-right: 20px;
+}
+.btn:hover{
+    background: rgb(192, 190, 190);  
+    color: rgb(88, 41, 9);;
+    transform: scale(1.1);  
+}
+
+.price{
+    display: flex;
+    align-items: center;
+    font-size: 28px;
+    font-weight: bold;
+    color: white;
+}
+.price span{
+    font-size: 20px;
+    font-weight: 800;
+    color: rgb(88, 41, 9);
+    margin-left: 10px;
+}
+.icons{
+    position: absolute;
+    top: 50%;
+    padding: 0 7%;
+    transform: translateY(-50%);
+}
+.icons i{
+    display: block;
+    margin: 35px 0;
+    color: white;
+    font-size: 27px;
+    transition: all .6s;
+}
+.icons i:hover{
+    transform: translateY(-5px);
+    color: rgb(88, 41, 9);;;
+     
+}
+.scroll{
+    position: absolute;
+    top: 92%;
+    right: 7%;
+    transform: translateY(-50px);
+}
+.scroll a{
+    font-size: 20px;
+    color: white;
+    transition: all .6s;
+    
+}
+.scroll a:hover{
+    color: rgb(88, 41, 9);
+}
+@media(max-width: 1770px){
+    header{
+        padding: 22px 4%;
+    }
+    .icons{
+        padding: 0 4%;
+    }
+    .scroll{
+        right: 4%;
+    }
+}
